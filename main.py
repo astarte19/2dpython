@@ -23,6 +23,7 @@ grenade_thrown = False
 
 #define game variables
 GRAVITY = 0.75
+TILE_SIZE = 40
 
 #bullet
 bullet_img = pygame.image.load('img/icons/bullet.png').convert_alpha()
