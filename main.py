@@ -343,7 +343,6 @@ class World():
 
 	def process_data(self, data):
 		self.level_length = len(data[0])
-		# iterate through each value in level data file
 		for y, row in enumerate(data):
 			for x, tile in enumerate(row):
 				if tile >= 0:
@@ -441,8 +440,7 @@ class ItemBox(pygame.sprite.Sprite):
 			elif self.item_type == 'Ammo':
 				player.ammo += 15
 			elif self.item_type == 'Grenade':
-				player.grenades += 3
-			# delete the item box
+				player.grenades += 1
 			self.kill()
 
 
